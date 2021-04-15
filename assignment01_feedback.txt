@@ -1,0 +1,18 @@
+v_02
+
+Missing semantic tags (-2) Remember <header>, <main>, <section>, <footer>, ...? The <div cass="noteL"> could be a <nav>
+
+<h1> and <nav> after it should be in <header>
+
+Logos should be in <footer> and also clickable
+
+You forgot the meta tag for content-width so your responsive design is not really applied to the page. (-1)
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Responsiveness (-2)
+Your buttons' dimensions and font size have absolute values (px) and are too big for smaller screens. In general, avoid using absolute values as much as you can, since you want to make your website as fluid and responsive as possible.
+You shouldn't use float and margin to position buttons, you could have put each pair in flexbox since they are horizontally aligned.
+The logos at the bottom are overlapping on my screen. You should have put them in a flexbox so they are nicely aligned horizontally.
+The content should is overflowing the available viewport’s height, probably due the absolute values you're using. (-1)
+
+<textarea> has a placeholder attribute that you should have used, rather than actually putting the text as the value.

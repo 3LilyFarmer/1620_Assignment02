@@ -9,15 +9,14 @@ body{
     flex-direction: column;
 }
 
-.listing{
-    background-color: #fffaf3;
+body > header{
+    background-color: #1f1d2e;
 }
+
 .noteL{
     list-style-type: square;
 }
-.notepage{
-    background-color: #f2e9de;
-}
+
 .navbar{
     order: 2;
     display: flex;
@@ -29,6 +28,14 @@ body{
     padding-right: 20px;
     list-style-type: none;
 }
+
+.title_style{
+    font-size: 6vw;
+    font-family: 'Bungee Outline', cursive;
+    
+    text-align: center;
+}
+
 .button{
     border: none;
     height: 60px;
@@ -46,45 +53,50 @@ body{
     float: left;
     margin-left: 20px;
     width: 150px;
-    background-color: #56949f;
 }
+
 .themeB{
     order: 3;
     float: right;
     margin-right: 20px;
     width: 150px;
-    background-color: #6e6a86;
 }
+
 .saveB{
     order: 5;
     margin-left: 4%;
     width: 80px;
-    background-color: #56949f;
 }
+
 .cancelB{
     order: 5;
     margin-left: 45%;
     width: 120px;
-    background-color: #d7827e;
 }
 
-.titleF{
-    font-family: 'Bungee Outline', cursive;
-    color: #286983;
-    font-size: 2em;
-    text-align: center;
-}
 .textF{
     font-family: 'Press Start 2P', cursive;
-    color: #575279;
     font-size: 1em;
 }
-.navF{
-    color: #286983;
+
+.KIT{
+    /* width: 400px; */
+    text-align: center;
+}
+
+.link_image{
+    display: flex;
+    justify-content: center;
 }
 .linkedin_logo{
-    margin-left: 30%;
+    width: 6.25%;
+    height: auto;
 }
+.internet_logo{
+    width: 6.25%;
+    height: auto;
+}
+
 
 #note_field{
     order: 4;
@@ -97,9 +109,34 @@ body{
     border-width: 5px;
     border-radius: 4px;
 }
-#KIT{
-    width: 400px;
-    text-align: center;
+
+
+#light_theme_left{
+    background-color: #fffaf3;
+}
+#light_theme_right1, #light_theme_right2{
+    background-color: #f2e9de;
+}
+#title_light{
+    color: #286983;
+}
+#noteB_light{
+    background-color: #56949f;
+}
+#themeB_light{
+    background-color: #6e6a86;
+}
+#saveB_light{
+    background-color: #56949f;
+}
+#cancelB_light{
+    background-color: #d7827e;
+}
+#textF_light{
+    color: #575279;
+}
+#navF_light{
+    color: #286983;
 }
 
 /* responsive design 
@@ -108,84 +145,98 @@ body{
 @media screen and (min-width:600px){
     body{
         display: grid;
+        height: 100vh;
         grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 8fr 2fr;
     }
     
-    .listing{
+    .L0_listing{
         grid-column: 1/2;
+        grid-row: 1/-1;
+        /* display: grid;
+        grid-template-rows: 100px 1fr; */
+    }
+    .L0_notepage{
+        grid-column: 2/3;
+        grid-row: 1/3;
+        /* display: grid; */
+        /* grid-template-rows: 1.5fr 1fr 6fr; */
+    }
+    .L0_footer{
+        grid-column: 2/3;
+        grid-row: -2/-1;
+    }
+    .L1_listing_align{
+        height: inherit;
         display: grid;
-        grid-template-rows: 100px 1fr;
+        grid-template-rows: 1fr 4fr;
     }
-    .noteL{
-        grid-column: 1/2;
-    }
-    .notepage{
-        grid-column: 2/3;
+    .L1_notepage_align{
         display: grid;
-        grid-template-rows: 100px 1fr 1.5fr 5fr 1.5fr 3fr;
+        grid-template-rows: 1.5fr 1fr 6fr;
     }
-    .navbar{
-        grid-column: 2/3;
-        grid-row: 2/3;
-        align-self: center;
-        margin-left: 75%;
-    }
-    .noteB{
-        grid-row: 3/4;
-        margin: 10px 20px;
-    }
-    .themeB{
-        grid-row: 3/4;
-        grid-column: /-1;
-        margin-left: 78%;
-        margin-top: 10px;
-    }
-    .titleB{
-        grid-row: 1/2;
-    }
-    .titleB, .titleF{
-        grid-column: 1/3;
-    }
-    .saveB{
-        grid-row: 5/6;
-        grid-column: 2/3;
-        align-self: center;
-        margin-left: 60%;
-    }
-    .cancelB{
-        grid-row: 5/6;
-        grid-column: 2/3;
-        align-self: center;
-        margin-left: 80%;
-    }
-    .linkedin_logo{
-        grid-row: 6/7;
-        grid-column: 1/3;
-        margin-top: 8%;
-        margin-left: 40%;
-    }
-    .internet_logo{
-        grid-row: 6/7;
-        grid-column: 1/3;
-        margin-top: 8%;
-        margin-left: 44%;
+    .L1_footAlign{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
     }
 
-    .titleF{
+    .title_style{
+        grid-row: 1/2;
         font-size: 40px;
     }
-    .textF{
-        font-size: 20px;
+    .navbar{
+        grid-row: 2/3;
+    }
+    .L2_noteblock_align{
+        grid-row: 3/4;
+    }
+    .noteL{
+        grid-row: 2/3;
+    }
+    .noteB{
+        /* grid-row: 3/4; */
+    }
+    .themeB{
+        /* grid-row: 3/4;
+        grid-column: /-1; */
+    }
+    .titleB{
+        /* grid-row: 1/2; */
+    }
+    .titleB, .titleF{
+        /* grid-column: 1/3; */
+    }
+    .saveB{
+        /* grid-row: 5/6;
+        grid-column: 2/3; */
+    }
+    .cancelB{
+        /* grid-row: 5/6;
+        grid-column: 2/3; */
+    }
+    .linkedin_logo{
+        /* grid-row: 6/7;
+        grid-column: 1/3; */
+    }
+    .internet_logo{
+        /* grid-row: 6/7;
+        grid-column: 1/3; */
     }
 
+    /* .titleF{
+        font-size: 40px;
+    } */
+    /* .textF{
+        grid-row: 1/2;
+        font-size: 20px;
+    } */
+
     #note_field{
-        grid-row: 4/5;
-        grid-column: 1/3;
+        /* grid-row: 4/5;
+        grid-column: 1/3; */
     }
     #KIT{
-        grid-row: 6/7;
-        grid-column: 1/3;
-        align-self: center;
-        margin-left: 33%;
+        /* grid-row: 6/7;
+        grid-column: 1/3; */
     }
 }
