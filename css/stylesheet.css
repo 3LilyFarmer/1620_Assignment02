@@ -9,11 +9,8 @@ body{
     flex-direction: column;
 }
 
-.L0_listing{
-    background-color: #fffaf3;
-}
-.L0_notepage, .L0_footer{
-    background-color: #f2e9de;
+body > header{
+    background-color: #1f1d2e;
 }
 
 .noteL{
@@ -35,9 +32,10 @@ body{
 .title_style{
     font-size: 6vw;
     font-family: 'Bungee Outline', cursive;
-    color: #286983;
+    
     text-align: center;
 }
+
 .button{
     border: none;
     height: 60px;
@@ -55,36 +53,37 @@ body{
     float: left;
     margin-left: 20px;
     width: 150px;
-    background-color: #56949f;
 }
+
 .themeB{
     order: 3;
     float: right;
     margin-right: 20px;
     width: 150px;
-    background-color: #6e6a86;
 }
+
 .saveB{
     order: 5;
     margin-left: 4%;
     width: 80px;
-    background-color: #56949f;
 }
+
 .cancelB{
     order: 5;
     margin-left: 45%;
     width: 120px;
-    background-color: #d7827e;
 }
 
 .textF{
     font-family: 'Press Start 2P', cursive;
-    color: #575279;
     font-size: 1em;
 }
-.navF{
-    color: #286983;
+
+.KIT{
+    /* width: 400px; */
+    text-align: center;
 }
+
 .link_image{
     display: flex;
     justify-content: center;
@@ -98,6 +97,7 @@ body{
     height: auto;
 }
 
+
 #note_field{
     order: 4;
     width: 94%;
@@ -109,9 +109,34 @@ body{
     border-width: 5px;
     border-radius: 4px;
 }
-#KIT{
-    /* width: 400px; */
-    text-align: center;
+
+
+#light_theme_left{
+    background-color: #fffaf3;
+}
+#light_theme_right1, #light_theme_right2{
+    background-color: #f2e9de;
+}
+#title_light{
+    color: #286983;
+}
+#noteB_light{
+    background-color: #56949f;
+}
+#themeB_light{
+    background-color: #6e6a86;
+}
+#saveB_light{
+    background-color: #56949f;
+}
+#cancelB_light{
+    background-color: #d7827e;
+}
+#textF_light{
+    color: #575279;
+}
+#navF_light{
+    color: #286983;
 }
 
 /* responsive design 
