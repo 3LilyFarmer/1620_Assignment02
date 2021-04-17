@@ -38,7 +38,7 @@ function field_refresh(){
         document.querySelector(".saveB").classList.remove("hide");
         document.querySelector(".cancelB").classList.remove("hide");
     } else {
-        document.querySelector("#note_field").value='This is a placeholder test';
+        document.querySelector(".note_field").value='This is a placeholder';
     }
 }
 
