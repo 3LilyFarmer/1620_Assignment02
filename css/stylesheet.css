@@ -9,8 +9,17 @@ body{
     flex-direction: column;
 }
 
-body > header{
+/* body > header{
     background-color: #1f1d2e;
+} */
+main, footer{
+    background-color: #26233a;
+}
+h1 {
+   color: #31748f; 
+}
+div + button{
+    background-color: #9ccfd8;
 }
 
 .noteL{
@@ -40,7 +49,6 @@ body > header{
     border: none;
     height: 60px;
     border-radius: 12px;
-    color: white;
     padding-left: 20px;
     text-align: center;
     text-decoration: none;
@@ -98,44 +106,89 @@ body > header{
 }
 
 
-#note_field{
+.note_field{
+    display: block;
     order: 4;
     width: 94%;
     min-height: 200px;
     margin-left: 2%;
     margin-right: 2%;
     resize: none;
-    border-color: lightskyblue;
     border-width: 5px;
     border-radius: 4px;
 }
 
+.hide{
+    display: none;
+}
 
-#light_theme_left{
+.theme_left_dark{
+    background-color: #1f1d2e;
+}
+.theme_right_dark{
+    background-color: #26233a;
+}
+.title_dark{
+    color: #31748f;
+}
+.noteB_dark{
+    background-color: #9ccfd8;
+    color: black;
+}
+.themeB_dark{
+    background-color: #6e6a86;
+    color: black;
+}
+.note_field_dark{
+    border-color: #eb6f92;
+}
+.saveB_dark{
+    background-color: #f6c177;
+    color: black;
+}
+.cancelB_dark{
+    background-color: #ebbcba;
+    color: black;
+}
+.textF_dark{
+    color: #e0def4;
+}
+.navF_dark{
+    color: #31748f;
+}
+
+.theme_left_light{
     background-color: #fffaf3;
 }
-#light_theme_right1, #light_theme_right2{
+.theme_right_light{
     background-color: #f2e9de;
 }
-#title_light{
+.title_light{
     color: #286983;
 }
-#noteB_light{
+.noteB_light{
     background-color: #56949f;
+    color: white;
 }
-#themeB_light{
+.themeB_light{
     background-color: #6e6a86;
+    color: white;
 }
-#saveB_light{
-    background-color: #56949f;
+.note_field_light{
+    border-color: #b4637a;
 }
-#cancelB_light{
+.saveB_light{
+    background-color: #ea9d34;
+    color: white;
+}
+.cancelB_light{
     background-color: #d7827e;
+    color: white;
 }
-#textF_light{
+.textF_light{
     color: #575279;
 }
-#navF_light{
+.navF_light{
     color: #286983;
 }
 
